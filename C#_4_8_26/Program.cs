@@ -7,16 +7,11 @@ namespace C__4_8_26
     {
         static void Main(string[] args)
         {
-            var customer = new Customer(1);
-            customer.Orders.Add(new Order());
-            customer.Orders.Add(new Order());
+            var person = new AccessModifier();
 
-            Console.WriteLine("Customer: Orders: {0}", customer.Orders.Count);
+            person.SetName("Sourav Dwivedi");
+            person.GetName();
 
-            customer.NewOrder();
-
-
-            Console.WriteLine("Customer: Orders: {0}", customer.Orders.Count);
         }
 
         static void UseCalculator()
