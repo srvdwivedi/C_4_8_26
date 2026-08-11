@@ -6,12 +6,28 @@ namespace C__4_8_26
     public class Program
     {
         static void Main(string[] args)
+
         {
-            var person = new AccessModifier();
+            var person = new PropertiesAM();
+            person.Name = "Sourav Dwivedi";
+            Console.WriteLine(person.Name);
+            person.Description = "Software Developer";
+            Console.WriteLine(person.Description);
 
-            person.SetName("Sourav Dwivedi");
-            person.GetName();
+        }
 
+        static void UseAccessModifier()
+        {
+            try
+            {
+                var person = new AccessModifier();
+                person.SetName("Sourav Dwivedi");
+                person.GetName();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         static void UseCalculator()
