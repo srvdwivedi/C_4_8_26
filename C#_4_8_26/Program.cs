@@ -8,12 +8,39 @@ namespace C__4_8_26
         static void Main(string[] args)
 
         {
-            var person = new PropertiesAM();
-            person.Name = "Sourav Dwivedi";
-            Console.WriteLine(person.Name);
-            person.Description = "Software Developer";
-            Console.WriteLine(person.Description);
+            UseCar();
+        }
 
+
+        static void UseCar()
+        {
+            try
+            {
+                var car = new Car();
+                car.FuelType();
+                car.NumberOfDoors();
+                car.Start();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        static void UseProperties()
+        {
+            try
+            {
+                var person = new PropertiesAM();
+                person.Name = "Sourav Dwivedi";
+                Console.WriteLine(person.Name);
+                person.Description = "Software Developer";
+                Console.WriteLine(person.Description);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         static void UseAccessModifier()
